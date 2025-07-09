@@ -5,3 +5,110 @@
 .mainFxmlClass {
 
 }
+
+.FondoPrincipal {
+    -fx-background-color:  #FFFFFF;
+}
+
+.CubosTexto {
+    -fx-background-color:  #E0E0E0;
+    -fx-background-radius:  15px;
+    -fx-effect:  dropshadow(three-pass-box, rgba(66,66,66,0.2), 15, 0, 0, 0);
+    -fx-border-color:  #1565C0;
+    -fx-border-width:  2px;
+    -fx-border-radius:  15px;
+}
+
+.CuboTextoSecundarios {
+    -fx-background-radius:  5px;
+    -fx-border-color:  #4DB6AC;
+    -fx-border-radius:  5px;
+    -fx-border-width:  1.5px;
+    -fx-padding:  8px;
+}
+
+.TituloArriba {
+    -fx-text-fill:  #1565C0;
+}
+
+.TituloArriba2 {
+    -fx-text-fill:  #4DB6AC;
+}
+
+/* Estilo principal de la tabla */
+.tabla {
+    -fx-fondo: #FFFFFF; /* Blanco */
+    -fx-borde: #E0E0E0; /* Gris claro */
+    -fx-grosor-borde: 1px;
+    -fx-fuente: "Arial";
+}
+
+/* Encabezados de columna */
+.encabezado {
+    -fx-fondo: #1565C0; /* Azul veterinario */
+    -fx-texto: #FFFFFF; /* Blanco */
+    -fx-negrita: bold;
+    -fx-alineacion: centro;
+}
+
+/* Filas normales */
+.fila {
+    -fx-fondo: #FFFFFF; /* Blanco */
+    -fx-texto: #424242; /* Gris oscuro */
+    -fx-borde-inferior: #E0E0E0 1px;
+}
+
+/* Filas impares (opcional) */
+.fila-impar {
+    -fx-fondo: #F5F5F5; /* Gris muy claro */
+}
+
+/* Efecto al pasar el mouse */
+.fila:hover {
+    -fx-fondo: #4DB6AC; /* Verde agua */
+    -fx-texto: #FFFFFF; /* Blanco */
+}
+
+/* Fila seleccionada */
+.fila-seleccionada {
+    -fx-fondo: #1565C0; /* Azul veterinario */
+    -fx-texto: #FFFFFF;
+}
+
+/* Estilo general para el TableView */
+.table-view {
+    -fx-font-family: "Constantia";  /* Fuente Constantia*/
+    -fx-font-size: 14px;  /* Tamaño de la fuente */
+}
+
+/* Estilo para las celdas alternadas con colores aqua */
+.table-row-cell:filled:nth-child(odd) {
+    -fx-background-color: #FFFFFF;  /* Color de fondo aqua claro para filas impares */
+}
+
+.table-row-cell:filled:nth-child(even) {
+    -fx-background-color: #afeeee;  /* Color de fondo aqua más oscuro para filas pares */
+}
+
+/* Estilo para los encabezados (títulos de las columnas) */
+.table-view .column-header {
+    -fx-font-weight: bold;  /* Hace el texto en los encabezados en negrita */
+    -fx-font-size: 16px;  /* Tamaño del texto en los encabezados */
+    -fx-background-color: #E0E0E0;  /* Color de fondo del encabezado (aqua oscuro) */
+    -fx-text-fill: white;  /* Color del texto en los encabezados (blanco) */
+}
+
+/* Estilo para las celdas cuando se pasa el mouse sobre ellas */
+.table-row-cell:hover {
+    -fx-background-color: #1565C0;  /* Fondo azul claro al pasar el mouse sobre una fila */
+}
+
+/* Estilo para la selección de una fila */
+.table-row-cell:selected {
+    -fx-background-color: #4DB6AC;  /* Fondo verde aqua claro cuando la fila está seleccionada */
+}
+
+/* Estilo para las columnas en general */
+.table-column {
+    -fx-alignment: center;  /* Centra el texto en las celdas de las columnas */
+}
